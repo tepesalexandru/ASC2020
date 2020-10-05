@@ -10,7 +10,7 @@ namespace ASC1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Word of C#!!");
+            Console.WriteLine("Hello World of C#!!");
             Console.WriteLine("Introduceti numarul de pantof: ");
             
             string line;
