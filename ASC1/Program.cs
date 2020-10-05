@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ASC1
 {
@@ -12,23 +8,15 @@ namespace ASC1
         {
             Console.WriteLine("Hello World of C#!!");
             Console.WriteLine("Introduceti numarul de pantof: ");
-            
-            string line;
-            line = Console.ReadLine();
 
             int numarPantof;
-
-            try
-            {
-                numarPantof = int.Parse(line);
-                
+            try {
+                numarPantof = int.Parse(Console.ReadLine());
                 Console.WriteLine($"Aveti {numarPantof} numarul la pantof");
+            } catch (Exception e) {
+                Console.WriteLine("Va rugam sa folositi doar numere intregi!");
+                return;
             }
-            catch (FormatException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
 
             //int.TryParse(line, out numarPantof);
 
